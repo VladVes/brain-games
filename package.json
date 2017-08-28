@@ -1,0 +1,27 @@
+{
+  "name": "the_brain_games",
+  "version": "1.0.0",
+  "description": "project-lvl1-s124",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladVes/project-lvl1-s124.git"
+  },
+  "author": "Vladimir Veselov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladVes/project-lvl1-s124/issues"
+  },
+  "homepage": "https://github.com/VladVes/project-lvl1-s124#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "*",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "*"
+  },
+  "dependencies": {}
+}
