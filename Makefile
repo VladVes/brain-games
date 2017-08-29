@@ -6,3 +6,6 @@ start:
 
 publish:
 	npm publish --unsafe-perm
+
+lint:
+	npm run eslint
