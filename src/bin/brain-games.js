@@ -1,6 +1,5 @@
 #! /usr/bin/env nodejs
 
-import gameStart from '..';
+import { gamesIntro } from '..';
 
-gameStart();
-
+gamesIntro();

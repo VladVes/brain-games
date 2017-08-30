@@ -1,10 +1,11 @@
 {
   "name": "the_brain_games",
-  "version": "1.1.1",
+  "version": "1.2.2",
   "description": "project-lvl1-s124",
   "main": "index.js",
   "bin": {
-    "brain-games-veselov": "dist/bin/brain-games.js"
+    "brain-games-v": "dist/bin/brain-games.js",
+    "brain-even-v": "dist/bin/brain-even.js"
   },
   "scripts": {
     "test": "jest",
