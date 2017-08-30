@@ -8,4 +8,4 @@ publish:
 	npm publish --unsafe-perm
 
 lint:
-	npm run eslint
+	npm run eslint ./src/**
