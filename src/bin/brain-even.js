@@ -1,5 +1,6 @@
 #! /usr/bin/env nodejs
 
-import { gameBrainEven } from '..';
+import runGame from '..';
+import brainEven from '../games/Brain-even.js';
 
-gameBrainEven();
+runGame(brainEven);
