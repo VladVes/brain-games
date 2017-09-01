@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import { getGame } from './generic';
 import './games/brain-even';
 import './games/brain-calc';
+import './games/brain-gcd';
 
 const userAuth = () => {
   const name = readlineSync.question('May I have your name? ');
