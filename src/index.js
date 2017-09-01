@@ -1,4 +1,7 @@
 import readlineSync from 'readline-sync';
+import { getGame } from './generic.js';
+import * as brainEven from './games/brain-even.js';
+import * as brainCalc from './games/brain-calc.js';
 
 const userAuth = () => {
   const name = readlineSync.question('May I have your name? ');
@@ -13,22 +16,25 @@ const greeting = (message) => {
   }
 };
 
-const gamesIntro = (message = null) => {
+export const gamesIntro = (message = null) => {
   greeting(message);
   getUserName();
 };
 
-export default (gameInit, stages = 3) => {
+export default (gameName, stages = 3) => {
   greeting();
-  const game = gameInit();
+  const game = getGame(gameName);
+  console.log(game.desc);
   const userName = userAuth();
   const runStage = (stages) => {
     if (stages === 0) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const { stageResult, userAnswer, answer } = game();
-    if (!stageResult) {
+    const { question, answer } = game.body();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\n
         Let's try again, ${userName}!`);
       return;
@@ -39,5 +45,3 @@ export default (gameInit, stages = 3) => {
 
   runStage(stages);
 };
-
-export { gamesIntro };
