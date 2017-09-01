@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getGame } from './generic.js';
-import * as brainEven from './games/brain-even.js';
-import * as brainCalc from './games/brain-calc.js';
+import { getGame } from './generic';
+import './games/brain-even';
+import './games/brain-calc';
 
 const userAuth = () => {
   const name = readlineSync.question('May I have your name? ');
@@ -18,7 +18,7 @@ const greeting = (message) => {
 
 export const gamesIntro = (message = null) => {
   greeting(message);
-  getUserName();
+  userAuth();
 };
 
 export default (gameName, stages = 3) => {
@@ -26,8 +26,8 @@ export default (gameName, stages = 3) => {
   const game = getGame(gameName);
   console.log(game.desc);
   const userName = userAuth();
-  const runStage = (stages) => {
-    if (stages === 0) {
+  const runStage = (stgs) => {
+    if (stgs === 0) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
@@ -40,7 +40,7 @@ export default (gameName, stages = 3) => {
       return;
     }
     console.log('Correct!');
-    runStage(stages - 1);
+    runStage(stgs - 1);
   };
 
   runStage(stages);

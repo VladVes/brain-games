@@ -1,5 +1,5 @@
-import { getRandomInteger } from '../brainMath.js';
-import { definer } from '../generic.js';
+import { getRandomInteger } from '../brainMath';
+import { definer } from '../generic';
 
 const desc = 'Answer "yes" if number even otherwise anser "no"';
 const game = () => {

@@ -1,5 +1,5 @@
-import { getRandomInteger } from '../brainMath.js';
-import { definer } from '../generic.js';
+import { getRandomInteger } from '../brainMath';
+import { definer } from '../generic';
 
 const desc = 'What is the result of the expression?';
 let attempt = 0;
@@ -21,8 +21,10 @@ const game = () => {
       operation = '*';
       answer = num1 * num2;
       break;
+    default:
+      return 'error: operation out of attempts';
   }
-  attempt++;
+  attempt += 1;
   const question = `${num1} ${operation} ${num2}`;
   return { question, answer: String(answer) };
 };
