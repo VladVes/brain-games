@@ -1,4 +1,4 @@
 # project-lvl-s124
 # Vadimir Veselov
-[![Code Climate](https://codeclimate.com/github/cloudfoundry/membrane.png)](https://codeclimate.com/github/cloudfoundry/membrane)
-[![Build Status](https://travis-ci.org/cloudfoundry/membrane.png)](https://travis-ci.org/cloudfoundry/membrane)
+[![Code Climate](https://codeclimate.com/VladVes/project-lvl1-s124.svg?branch=master)](https://codeclimate.com/VladVes/project-lvl1-s124)
+[![Build Status](https://www.travis-ci.org/VladVes/project-lvl1-s124.svg?branch=master)](https://www.travis-ci.org/VladVes/project-lvl1-s124)

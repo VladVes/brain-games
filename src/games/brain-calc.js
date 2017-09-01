@@ -1,4 +1,4 @@
-import { getRandomInteger } from '../brainMath';
+import getRandomInteger from '../brainMath';
 import { definer } from '../generic';
 
 const desc = 'What is the result of the expression?';
