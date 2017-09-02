@@ -1,8 +1,4 @@
 import readlineSync from 'readline-sync';
-import { getGame } from './generic';
-import './games/brain-even';
-import './games/brain-calc';
-import './games/brain-gcd';
 
 const userAuth = () => {
   const name = readlineSync.question('May I have your name? ');
@@ -22,6 +18,11 @@ export const gamesIntro = (message = null) => {
   userAuth();
 };
 
+const getGame = (gameName) => {
+  const game = require(`./games/${gameName}`);
+  return game;
+};
+
 export default (gameName, stages = 3) => {
   greeting();
   const game = getGame(gameName);
@@ -32,7 +33,7 @@ export default (gameName, stages = 3) => {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const { question, answer } = game.body();
+    const { question, answer } = game.run();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer !== userAnswer) {

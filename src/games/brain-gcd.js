@@ -1,8 +1,7 @@
 import getRandomInteger from '../brainMath';
-import { definer } from '../generic';
 
-const desc = 'Find the greatest common divisor of given numbers.';
-const game = () => {
+export const desc = 'Find the greatest common divisor of given numbers.';
+export const run = () => {
   const num1 = getRandomInteger(1, 15);
   const num2 = getRandomInteger(1, 15);
   const findDiv = (n1, n2) => {
@@ -17,5 +16,3 @@ const game = () => {
   const question = `${num1} ${num2}`;
   return { question, answer: String(answer) };
 };
-
-definer('brainGcd', desc, game);

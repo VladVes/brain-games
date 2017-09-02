@@ -2,4 +2,4 @@
 
 import runGame from '..';
 
-runGame('brainEven');
+runGame('brain-even');

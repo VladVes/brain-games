@@ -2,4 +2,4 @@
 
 import runGame from '..';
 
-runGame('brainCalc');
+runGame('brain-calc');

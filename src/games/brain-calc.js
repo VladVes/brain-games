@@ -1,11 +1,10 @@
 import getRandomInteger from '../brainMath';
-import { definer } from '../generic';
 
-const desc = 'What is the result of the expression?';
-let attempt = 0;
-const game = () => {
+export const desc = 'What is the result of the expression?';
+export const run = () => {
   const num1 = getRandomInteger(1, 10);
   const num2 = getRandomInteger(1, 10);
+  const attempt = getRandomInteger(0, 3);
   let answer = null;
   let operation = '';
   switch (attempt) {
@@ -24,9 +23,6 @@ const game = () => {
     default:
       return 'error: operation out of attempts';
   }
-  attempt += 1;
   const question = `${num1} ${operation} ${num2}`;
   return { question, answer: String(answer) };
 };
-
-definer('brainCalc', desc, game);
