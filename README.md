@@ -14,7 +14,7 @@ make install
 ## Setup as app
 
 ```
-make install the_brain_games -g
+npm install the_brain_games -g
 ```
 
 ## for start use commands:
