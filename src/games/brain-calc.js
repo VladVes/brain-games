@@ -1,7 +1,8 @@
 import getRandomInteger from '../brainMath';
+import gameStarter from '..';
 
-export const desc = 'What is the result of the expression?';
-export const run = () => {
+const desc = 'What is the result of the expression?';
+const game = () => {
   const num1 = getRandomInteger(1, 10);
   const num2 = getRandomInteger(1, 10);
   const attempt = getRandomInteger(0, 3);
@@ -21,8 +22,12 @@ export const run = () => {
       answer = num1 * num2;
       break;
     default:
-      return 'error: operation out of attempts';
+      return 'error: operation not found';
   }
   const question = `${num1} ${operation} ${num2}`;
   return { question, answer: String(answer) };
+};
+
+export default () => {
+  gameStarter(game, desc);
 };

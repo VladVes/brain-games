@@ -13,27 +13,16 @@ const greeting = (message) => {
   }
 };
 
-export const gamesIntro = (message = null) => {
-  greeting(message);
-  userAuth();
-};
-
-const getGame = (gameName) => {
-  const game = require(`./games/${gameName}`);
-  return game;
-};
-
-export default (gameName, stages = 3) => {
+export default (game, desc, stages = 3) => {
   greeting();
-  const game = getGame(gameName);
-  console.log(game.desc);
+  console.log(desc);
   const userName = userAuth();
   const runStage = (stgs) => {
     if (stgs === 0) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const { question, answer } = game.run();
+    const { question, answer } = game();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer !== userAnswer) {

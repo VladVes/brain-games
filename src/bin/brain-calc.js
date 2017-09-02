@@ -1,5 +1,5 @@
 #! /usr/bin/env nodejs
 
-import runGame from '..';
+import run from '../games/brain-calc';
 
-runGame('brain-calc');
+run();

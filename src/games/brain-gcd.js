@@ -1,7 +1,8 @@
 import getRandomInteger from '../brainMath';
+import gameStarter from '..';
 
-export const desc = 'Find the greatest common divisor of given numbers.';
-export const run = () => {
+const desc = 'Find the greatest common divisor of given numbers.';
+const game = () => {
   const num1 = getRandomInteger(1, 15);
   const num2 = getRandomInteger(1, 15);
   const findDiv = (n1, n2) => {
@@ -15,4 +16,8 @@ export const run = () => {
   const answer = findDiv(num1, num2);
   const question = `${num1} ${num2}`;
   return { question, answer: String(answer) };
+};
+
+export default () => {
+  gameStarter(game, desc);
 };
