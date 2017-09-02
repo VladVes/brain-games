@@ -1,4 +1,4 @@
-import getRandomInteger from '../brainMath';
+import { getRandomInteger } from '../brainMath';
 import gameStarter from '..';
 
 const desc = 'Answer "yes" if number even otherwise anser "no"';
