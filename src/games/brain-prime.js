@@ -1,5 +1,5 @@
 import { getRandomInteger, isPrimeNumber } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'Is the given numbers prime?';
 const game = () => {
@@ -9,5 +9,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };

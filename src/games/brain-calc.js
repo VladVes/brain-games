@@ -1,5 +1,5 @@
 import { getRandomInteger } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'What is the result of the expression?';
 const game = () => {
@@ -29,5 +29,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };

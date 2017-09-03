@@ -1,5 +1,5 @@
 import { getRandomInteger, arrayMax, arrayMin } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'Balance the given number.';
 const game = () => {
@@ -22,5 +22,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };

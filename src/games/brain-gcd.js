@@ -1,5 +1,5 @@
 import { getRandomInteger, findGcd } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'Find the greatest common divisor of given numbers.';
 const game = () => {
@@ -9,5 +9,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };

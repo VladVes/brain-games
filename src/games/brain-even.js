@@ -1,5 +1,5 @@
 import { getRandomInteger } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'Answer "yes" if number even otherwise anser "no"';
 const game = () => {
@@ -9,5 +9,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };

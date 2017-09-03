@@ -1,5 +1,5 @@
 import { getRandomInteger, mathProgressionGen } from '../brainMath';
-import gameStarter from '..';
+import launch from '..';
 
 const desc = 'What numder is missing in this progression?';
 const game = () => {
@@ -16,5 +16,5 @@ const game = () => {
 };
 
 export default () => {
-  gameStarter(game, desc);
+  launch(game, desc);
 };
