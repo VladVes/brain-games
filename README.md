@@ -18,6 +18,7 @@ npm install the_brain_games -g
 ```
 
 ## for start use commands:
+
 ```
 brain-even
 brain-calc
