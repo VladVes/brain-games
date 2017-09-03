@@ -54,3 +54,19 @@ export const mathProgressionGen = (startValue = [1], ratio, operations, length) 
   };
   return makeSequence(startValue, length);
 };
+
+export const isPrimeNumber = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+  const iter = (divisor) => {
+    if (divisor === num) {
+      return true;
+    }
+    if (num % divisor === 0) {
+      return false;
+    }
+    return iter(divisor + 1);
+  };
+  return iter(2);
+};
