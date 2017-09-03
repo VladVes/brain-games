@@ -11,10 +11,10 @@ const game = () => {
     if (maxVal - minVal === 1 || maxVal === minVal) {
       return numbers.join('');
     }
-    const newNum = numbers.slice();
-    newNum[maxIndx] = maxVal - 1;
-    newNum[minIndx] = minVal + 1;
-    return balance(newNum);
+    const newNumbers = numbers.slice();
+    newNumbers[maxIndx] = maxVal - 1;
+    newNumbers[minIndx] = minVal + 1;
+    return balance(newNumbers);
   };
 
   const answer = balance(mappedNum);

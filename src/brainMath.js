@@ -23,3 +23,34 @@ export const arrayMin = arr => arr.reduce((acc, elem, index) => {
   }
   return acc;
 }, { minVal: arr[0], minIndx: 0 });
+
+export const selectRndOperation = (ops) => {
+  const operation = ops[getRandomInteger(0, ops.length)];
+  switch (operation) {
+    case '+':
+      return (a, b) => a + b;
+    case '-':
+      return (a, b) => a - b;
+    case '*':
+      return (a, b) => a * b;
+    case '/':
+      return (a, b) => Math.floor(a / b);
+    default:
+      throw new Error('operation select error');
+  }
+};
+
+export const mathProgressionGen = (startValue = [1], ratio, operations, length) => {
+  const operation = selectRndOperation(operations);
+  const makeSequence = (sequence, len) => {
+    if (len === 0) {
+      return sequence;
+    }
+    const lastValue = sequence[sequence.length - 1];
+    const newSequence = sequence.slice();
+    newSequence.push(operation(lastValue, ratio));
+
+    return makeSequence(newSequence, len - 1);
+  };
+  return makeSequence(startValue, length);
+};
