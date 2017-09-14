@@ -1,5 +1,5 @@
 
-# "The brain games" (project-lvl-s124)
+# "The brain games"
 
 [![Code Climate](https://codeclimate.com/github/VladVes/project-lvl1-s124/badges/gpa.svg)](https://codeclimate.com/github/VladVes/project-lvl1-s124)
 [![Build Status](https://www.travis-ci.org/VladVes/project-lvl1-s124.svg?branch=master)](https://www.travis-ci.org/VladVes/project-lvl1-s124)
