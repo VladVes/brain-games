@@ -1,8 +1,8 @@
 
 # "The brain games"
 
-[![Code Climate](https://codeclimate.com/github/VladVes/project-lvl1-s124/badges/gpa.svg)](https://codeclimate.com/github/VladVes/project-lvl1-s124)
-[![Build Status](https://www.travis-ci.org/VladVes/project-lvl1-s124.svg?branch=master)](https://www.travis-ci.org/VladVes/project-lvl1-s124)
+[![Code Climate](https://codeclimate.com/github/VladVes/the_brain_games/badges/gpa.svg)](https://codeclimate.com/github/VladVes/the_brain_games)
+[![Build Status](https://www.travis-ci.org/VladVes/the_brain_games.svg?branch=master)](https://www.travis-ci.org/VladVes/the_brain_games)
 
 # Vadimir Veselov
 ## Setup
