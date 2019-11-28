@@ -4,14 +4,13 @@
 [![Code Climate](https://codeclimate.com/github/VladVes/the_brain_games/badges/gpa.svg)](https://codeclimate.com/github/VladVes/the_brain_games)
 [![Build Status](https://www.travis-ci.org/VladVes/the_brain_games.svg?branch=master)](https://www.travis-ci.org/VladVes/the_brain_games)
 
-# Vadimir Veselov
 ## Setup
 
 ```
 make install
 ```
 
-## Setup as app
+## Install as app
 
 ```
 npm install the_brain_games -g
